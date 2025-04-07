@@ -2,7 +2,13 @@
 title: Computational Cryptography
 layout: home
 ---
-# Computational Cryptography (COMPCRYPT) Overview
+
+
+
+# Computational Cryptography 
+
+
+## Course Overview
 
 This is the landing page for the `Computational Cryptography Course` where number theory, descrete mathematics, and computational science come together. It is evolving, and we will add more content with time to make it more comprehensive and inclusive of the skills and knowledge of the computational cryptography ecosystem.
 
