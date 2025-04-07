@@ -6,9 +6,8 @@ layout: home
 
 This is the landing page for the `Computational Cryptography Course` where number theory, descrete mathematics, and computational science come together. It is evolving, and we will add more content with time to make it more comprehensive and inclusive of the skills and knowledge of the computational cryptography ecosystem.
 
-Below are the list of modules currently offered.
 
-
+Below are the list of modules currently offered -
 
 ## List of Lectures
 - [Lecture 1 - Number theory](./number-theory.md)
