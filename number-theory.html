@@ -34,7 +34,6 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/drawio.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/style.css?v=fb429c44" />
   
@@ -186,6 +185,7 @@
 <li class="toctree-l1"><a class="reference internal" href="cryptography.html">Cryptography</a></li>
 <li class="toctree-l1"><a class="reference internal" href="homomorphic-computing.html">Homomorphic computing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compression.html">Compression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testpad.html">Sage Notebook</a></li>
 </ul>
 
     </div>
@@ -338,6 +338,31 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="number-theory">
 <h1>Number theory<a class="headerlink" href="#number-theory" title="Link to this heading">#</a></h1>
+<p>This is a rudimentary example of a number theory calculation.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">K</span><span class="o">.&lt;</span><span class="n">a</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">NumberField</span><span class="p">(</span><span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="o">-</span><span class="mi">1000003</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">units</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">class_number</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(13588539824738670501937634049552988333821695209017845709174282597854911795746277767704092880505583734383723377832872303678298905016746850960859455536870699535559837726582129371990014046340205582554652629926918221158254563735625476440662077676454369*a + 13588560207533120525571173911036889359175071334492475577050945981112655754066115844008109262853595087091825489817727423098897434120714422347327176783787901807748239401349778788112430877903180798732552113299179825446080855972862801189963185573195143522,)
+3
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<p>Looks cool, right!</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -349,16 +374,16 @@ document.write(`
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "sagemath"
         },
         kernelOptions: {
-            name: "python3",
+            name: "sagemath",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'sagemath'</script>
 
                 </article>
               
