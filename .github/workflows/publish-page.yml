@@ -14,20 +14,17 @@ jobs:
     - uses: actions/checkout@v3
 
     # Install dependencies
-    - name: Set up Python 3.12
-      uses: actions/setup-python@v3
+    - name: mamba setup
+      uses: mamba-org/setup-micromamba@v2
       with:
-        python-version: 3.12
-
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-
-
+        environment-file: environment.yml
+        init-shell: bash
+        cache-environment: true
+        post-cleanup: 'all'
     # Build the book
     - name: Build the book
-      run: |
-        jupyter-book build .
+      run: jupyter-book build .
+      shell: bash -el {0}
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
