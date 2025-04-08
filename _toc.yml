@@ -9,3 +9,4 @@ chapters:
 - file: cryptography.md
 - file: homomorphic-computing.md
 - file: compression.md
+- file: testpad.ipynb
